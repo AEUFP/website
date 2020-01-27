@@ -3,6 +3,10 @@ data = `{
         {
             "nome": "Estatutos AEUFP",
             "ficheiro": "estatutos-aeufp.pdf"
+        },
+        {
+            "nome": "Regulamento Concurso de Ideias - Queima das Fitas 2020",
+            "ficheiro": "regulamento-camisola-queima.pdf"
         }
     ]
 }`
