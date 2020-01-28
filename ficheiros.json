@@ -7,6 +7,10 @@ data = `{
         {
             "nome": "Regulamento Concurso de Ideias - Queima das Fitas 2020",
             "ficheiro": "regulamento-camisola-queima.pdf"
+        },
+        {
+            "nome": "Regulamento Pilhas de Creatividade",
+            "ficheiro": "Regulamento ERP Eco Sustainability Award.pdf"
         }
     ]
 }`
