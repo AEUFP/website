@@ -70,13 +70,8 @@ $("#formulario-de-contacto").submit(function(e) {
 	var $form = $(this);
 	
 	var jqxhr = $.post($form.attr("action"), $form.serialize()).then(function() { })
-	.done(function() {
+	.always(function(data, status) {
 		alert("Obrigado pela tua mensagem! Entraremos em contacto assim que oportuno.");
-	})
-	.fail(function() {
-		alert( "error" );
-	})
-	.always(function() {
-		alert( "finished" );
+		console.log(status);
 	});
 });
