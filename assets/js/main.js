@@ -69,9 +69,8 @@ $("#formulario-de-contacto").submit(function(e) {
 	
 	var $form = $(this);
 	
-	var jqxhr = $.post($form.attr("action"), $form.serialize()).then(function() { })
-	.always(function(data, status) {
-		alert("Obrigado pela tua mensagem! Entraremos em contacto assim que oportuno.");
-		console.log(status);
-	});
+	$.post($form.attr("action"), $form.serialize()).then(function(data, status) {
+ 		alert("Obrigado pela tua mensagem! Entraremos em contacto assim que oportuno.");
+		console.log(data, status);
+ 	});
 });
