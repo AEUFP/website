@@ -69,6 +69,10 @@ $("#formulario-de-contacto").submit(function(e) {
 	
 	var $form = $(this);
 	
+	if ($("#name").val() === "" || $("#email").val() === "" || $("#message").val() === "") {
+		alert("Erro! Todos os campos deverão ser preenchidos!");
+	}
+	
 	if ($("#g-recaptcha-response").val() === "") { 
 		alert("Erro! O captcha não foi preenchido!");
 	} else {
