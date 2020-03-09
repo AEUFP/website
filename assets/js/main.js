@@ -71,6 +71,7 @@ $("#formulario-de-contacto").submit(function(e) {
 	
 	if ($("#name").val() === "" || $("#email").val() === "" || $("#message").val() === "") {
 		alert("Erro! Todos os campos deverão ser preenchidos!");
+		return;
 	}
 	
 	if ($("#g-recaptcha-response").val() === "") { 
