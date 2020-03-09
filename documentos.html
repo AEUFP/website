@@ -64,16 +64,16 @@
 					<div class="row">
 						<div class="col-6 col-12-medium">
 							<section>
-								<form name="contact" method="POST" netlify-honeypot="bot-field" data-netlify="true">
+								<form id="formulario-de-contacto" name="contact" method="POST" netlify-honeypot="bot-field" data-netlify-recaptcha="true" data-netlify="true">
 									<div class="row gtr-50">
 										<div class="col-6 col-12-small">
-											<input name="name" placeholder="Nome" type="text" />
+											<input id="name" name="name" placeholder="Nome" type="text" />
 										</div>
 										<div class="col-6 col-12-small">
-											<input name="email" placeholder="Email" type="text" />
+											<input id="email" name="email" placeholder="Email" type="text" />
 										</div>
 										<div class="col-12">
-											<textarea name="message" placeholder="Mensagem"></textarea>
+											<textarea id="message" name="message" placeholder="Mensagem"></textarea>
 										</div>
 										<div data-netlify-recaptcha="true"></div>
 										<div class="col-12">
