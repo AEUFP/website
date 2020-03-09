@@ -69,7 +69,7 @@ $("#formulario-de-contacto").submit(function(e) {
 	
 	var $form = $(this);
 	
-	if ($("#g-recaptcha-response").val() !== "") { 
+	if ($("#g-recaptcha-response").val() === "") { 
 		alert("Erro! O captcha não foi preenchido!");
 	} else {
 		$.post($form.attr("action"), $form.serialize()).then(function(data, status, xhr) {
