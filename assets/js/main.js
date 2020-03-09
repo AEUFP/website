@@ -79,7 +79,7 @@ $("#formulario-de-contacto").submit(function(e) {
 	} else {
 		$.post($form.attr("action"), $form.serialize()).then(function(data, status, xhr) {
 			alert("Obrigado pela tua mensagem! Entraremos em contacto assim que oportuno.");
-			$(this).closest('form').find("input[type=text], textarea").val("");
+			$form.find("input[type=text], textarea").val("");
 		});
 	}
 });
